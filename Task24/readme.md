@@ -1,13 +1,37 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Introduction to Currying and Partial Application
+The arity of a function is the number of arguments it requires. Currying a function means to convert a function of N arity into N functions of arity 1.
 
-Functional programming is about:
+In other words, it restructures a function so it takes one argument, then returns another function that takes the next argument, and so on.
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+Here's an example:
 
-Pure functions - the same input always gives the same output
+function unCurried(x, y) {
+  return x + y;
+}
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+function curried(x) {
+  return function(y) {
+    return x + y;
+  }
+}
 
-The members of freeCodeCamp happen to love tea.
+const curried = x => y => x + y
 
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+curried(1)(2)
+curried(1)(2) would return 3.
+
+This is useful in your program if you can't supply all the arguments to a function at one time. You can save each function call into a variable, which will hold the returned function reference that takes the next argument when it's available. Here's an example using the curried function in the example above:
+
+const funcForY = curried(1);
+console.log(funcForY(2)); // 3
+Similarly, partial application can be described as applying a few arguments to a function at a time and returning another function that is applied to more arguments. Here's an example:
+
+function impartial(x, y, z) {
+  return x + y + z;
+}
+
+const partialFn = impartial.bind(this, 1, 2);
+partialFn(10); // 13
+Fill in the body of the add function so it uses currying to add parameters x, y, and z.
+
+url - https://drive.500apps.com/3d09ed9c
