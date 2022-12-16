@@ -1,13 +1,10 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Implement map on a Prototype
+As you have seen from applying Array.prototype.map(), or simply map() earlier, the map method returns an array of the same length as the one it was called on. It also doesn't alter the original array, as long as its callback function doesn't.
 
-Functional programming is about:
+In other words, map is a pure function, and its output depends solely on its inputs. Plus, it takes another function as its argument.
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+You might learn a lot about the map method if you implement your own version of it. It is recommended you use a for loop or Array.prototype.forEach().
 
-Pure functions - the same input always gives the same output
+Write your own Array.prototype.myMap(), which should behave exactly like Array.prototype.map(). You should not use the built-in map method. The Array instance can be accessed in the myMap method using this.
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
-
-The members of freeCodeCamp happen to love tea.
-
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+url - https://drive.500apps.com/3ab32182
