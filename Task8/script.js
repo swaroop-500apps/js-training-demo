@@ -1,13 +1,14 @@
+let a = [1,2,3,4,5]
 Array.prototype.myMap = function(callback) {
-  const newArray = [];
+  let newArray = [];
   // Only change code below this line
-  for (let i = 0; i < this.length; i++) {
-    newArray.push(callback(this[i], i, this));
+  for (let i = 0; i < this.length; i+=1) {
+    newArray.push(callback(this[i]));
   }
   // Only change code above this line
   return newArray;
 };
-let output = Array.prototype.myMap()
-function getOutput() {
-  document.getElementById("output").innerText =output; 
+
+function getOutput(){
+  document.getElementById("output").innerText =a.myMap((item)=>item*item)  ;
 }
