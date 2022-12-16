@@ -1,13 +1,12 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Return Part of an Array Using the slice Method
+The slice method returns a copy of certain elements of an array. It can take two arguments, the first gives the index of where to begin the slice, the second is the index for where to end the slice (and it's non-inclusive). If the arguments are not provided, the default is to start at the beginning of the array through the end, which is an easy way to make a copy of the entire array. The slice method does not mutate the original array, but returns a new one.
 
-Functional programming is about:
+Here's an example:
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+const arr = ["Cat", "Dog", "Tiger", "Zebra"];
+const newArray = arr.slice(1, 3);
+newArray would have the value ["Dog", "Tiger"].
 
-Pure functions - the same input always gives the same output
+Use the slice method in the sliceArray function to return part of the anim array given the provided beginSlice and endSlice indices. The function should return an array.
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
-
-The members of freeCodeCamp happen to love tea.
-
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+url - https://drive.500apps.com/249331f8
