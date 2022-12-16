@@ -1,13 +1,5 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Implement the filter Method on a Prototype
+You might learn a lot about the filter method if you implement your own version of it. It is recommended you use a for loop or Array.prototype.forEach().
 
-Functional programming is about:
-
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
-
-Pure functions - the same input always gives the same output
-
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
-
-The members of freeCodeCamp happen to love tea.
-
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+Write your own Array.prototype.myFilter(), which should behave exactly like Array.prototype.filter(). You should not use the built-in filter method. The Array instance can be accessed in the myFilter method using this.
+url - https://drive.500apps.com/ca4f469c
