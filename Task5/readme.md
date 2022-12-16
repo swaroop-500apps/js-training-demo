@@ -1,13 +1,18 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Pass Arguments to Avoid External Dependence in a Function
+The last challenge was a step closer to functional programming principles, but there is still something missing.
 
-Functional programming is about:
+We didn't alter the global variable value, but the function incrementer would not work without the global variable fixedValue being there.
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+Another principle of functional programming is to always declare your dependencies explicitly. This means if a function depends on a variable or object being present, then pass that variable or object directly into the function as an argument.
 
-Pure functions - the same input always gives the same output
+There are several good consequences from this principle. The function is easier to test, you know exactly what input it takes, and it won't depend on anything else in your program.
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+This can give you more confidence when you alter, remove, or add new code. You would know what you can or cannot change and you can see where the potential traps are.
 
-The members of freeCodeCamp happen to love tea.
+finally, the function would always produce the same output for the same set of inputs, no matter what part of the code executes it.
 
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+Let's update the incrementer function to clearly declare its dependencies.
+
+Write the incrementer function so it takes an argument, and then returns a result after increasing the value by one.
+
+url - chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=115083
