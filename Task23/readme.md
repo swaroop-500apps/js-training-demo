@@ -1,13 +1,17 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Use the some Method to Check that Any Elements in an Array Meet a Criteria
+The some method works with arrays to check if any element passes a particular test. It returns a Boolean value - true if any of the values meet the criteria, false if not.
 
-Functional programming is about:
+For example, the following code would check if any element in the numbers array is less than 10:
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+const numbers = [10, 50, 8, 220, 110, 11];
 
-Pure functions - the same input always gives the same output
+numbers.some(function(currentValue) {
+  return currentValue < 10;
+});
+The some method would return true.
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+Use the some method inside the checkPositive function to check if any element in arr is positive. The function should return a Boolean value.
 
-The members of freeCodeCamp happen to love tea.
 
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+
+url - https://drive.500apps.com/a6332a56
