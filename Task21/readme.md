@@ -1,13 +1,20 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Apply Functional Programming to Convert Strings to URL Slugs
+The last several challenges covered a number of useful array and string methods that follow functional programming principles. We've also learned about reduce, which is a powerful method used to reduce problems to simpler forms. From computing averages to sorting, any array operation can be achieved by applying it. Recall that map and filter are special cases of reduce.
 
-Functional programming is about:
+Let's combine what we've learned to solve a practical problem.
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+Many content management sites (CMS) have the titles of a post added to part of the URL for simple bookmarking purposes. For example, if you write a Medium post titled Stop Using Reduce, it's likely the URL would have some form of the title string in it (.../stop-using-reduce). You may have already noticed this on the freeCodeCamp site.
 
-Pure functions - the same input always gives the same output
+Fill in the urlSlug function so it converts a string title and returns the hyphenated version for the URL. You can use any of the methods covered in this section, and don't use replace. Here are the requirements:
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+The input is a string with spaces and title-cased words
 
-The members of freeCodeCamp happen to love tea.
+The output is a string with the spaces between words replaced by a hyphen (-)
 
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+The output should be all lower-cased letters
+
+The output should not have any spaces
+
+
+
+url - https://drive.500apps.com/212d5296
