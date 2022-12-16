@@ -1,13 +1,22 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Use the filter Method to Extract Data from an Array
+Another useful array function is Array.prototype.filter(), or simply filter().
 
-Functional programming is about:
+filter calls a function on each element of an array and returns a new array containing only the elements for which that function returns a truthy value - that is, a value which returns true if passed to the Boolean() constructor. In other words, it filters the array, based on the function passed to it. Like map, it does this without needing to modify the original array.
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+The callback function accepts three arguments. The first argument is the current element being processed. The second is the index of that element and the third is the array upon which the filter method was called.
 
-Pure functions - the same input always gives the same output
+See below for an example using the filter method on the users array to return a new array containing only the users under the age of 30. For simplicity, the example only uses the first argument of the callback.
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+const users = [
+  { name: 'John', age: 34 },
+  { name: 'Amy', age: 20 },
+  { name: 'camperCat', age: 10 }
+];
 
-The members of freeCodeCamp happen to love tea.
+const usersUnder30 = users.filter(user => user.age < 30);
+console.log(usersUnder30); 
+The console would display the value [ { name: 'Amy', age: 20 }, { name: 'camperCat', age: 10 } ].
 
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+The variable watchList holds an array of objects with information on several movies. Use a combination of filter and map on watchList to assign a new array of objects with only title and rating keys. The new array should only include objects where imdbRating is greater than or equal to 8.0. Note that the rating values are saved as strings in the object and you may need to convert them into numbers to perform mathematical operations on them.
+
+chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=115183
