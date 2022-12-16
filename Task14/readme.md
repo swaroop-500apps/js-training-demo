@@ -1,13 +1,14 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Add Elements to the End of an Array Using concat Instead of push
+Functional programming is all about creating and using non-mutating functions.
 
-Functional programming is about:
+The last challenge introduced the concat method as a way to merge arrays into a new array without mutating the original arrays. Compare concat to the push method. push adds items to the end of the same array it is called on, which mutates that array. Here's an example:
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+const arr = [1, 2, 3];
+arr.push(4, 5, 6);
+arr would have a modified value of [1, 2, 3, 4, 5, 6], which is not the functional programming way.
 
-Pure functions - the same input always gives the same output
+concat offers a way to merge new items to the end of an array without any mutating side effects.
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+Change the nonMutatingPush function so it uses concat to merge newItem to the end of original without mutating original or newItem arrays. The function should return an array.
 
-The members of freeCodeCamp happen to love tea.
-
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+url - chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=115186
