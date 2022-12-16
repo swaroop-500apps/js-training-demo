@@ -1,13 +1,17 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Split a String into an Array Using the split Method
+The split method splits a string into an array of strings. It takes an argument for the delimiter, which can be a character to use to break up the string or a regular expression. For example, if the delimiter is a space, you get an array of words, and if the delimiter is an empty string, you get an array of each character in the string.
 
-Functional programming is about:
+Here are two examples that split one string by spaces, then another by digits using a regular expression:
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+const str = "Hello World";
+const bySpace = str.split(" ");
 
-Pure functions - the same input always gives the same output
+const otherString = "How9are7you2today";
+const byDigits = otherString.split(/\d/);
+bySpace would have the value ["Hello", "World"] and byDigits would have the value ["How", "are", "you", "today"].
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+Since strings are immutable, the split method makes it easier to work with them.
 
-The members of freeCodeCamp happen to love tea.
+Use the split method inside the splitify function to split str into an array of words. The function should return the array. Note that the words are not always separated by spaces, and the array should not contain punctuation.
 
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+url - chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=115189
