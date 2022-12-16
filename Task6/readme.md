@@ -1,13 +1,14 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Refactor Global Variables Out of Functions
+So far, we have seen two distinct principles for functional programming:
 
-Functional programming is about:
+Don't alter a variable or object - create new variables and objects and return them if need be from a function. Hint: using something like const newArr = arrVar, where arrVar is an array will simply create a reference to the existing variable and not a copy. So changing a value in newArr would change the value in arrVar.
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+Declare function parameters - any computation inside a function depends only on the arguments passed to the function, and not on any global object or variable.
 
-Pure functions - the same input always gives the same output
+Adding one to a number is not very exciting, but we can apply these principles when working with arrays or more complex objects.
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+Rewrite the code so the global array bookList is not changed inside either function. The add function should add the given bookName to the end of the array passed to it and return a new array (list). The remove function should remove the given bookName from the array passed to it.
 
-The members of freeCodeCamp happen to love tea.
+Note: Both functions should return an array, and any new parameters should be added before the bookName parameter.
 
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+url-chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=115097
