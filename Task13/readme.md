@@ -1,13 +1,9 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Combine Two Arrays Using the concat Method
+Concatenation means to join items end to end. JavaScript offers the concat method for both strings and arrays that work in the same way. For arrays, the method is called on one, then another array is provided as the argument to concat, which is added to the end of the first array. It returns a new array and does not mutate either of the original arrays. Here's an example:
 
-Functional programming is about:
+[1, 2, 3].concat([4, 5, 6]);
+The returned array would be [1, 2, 3, 4, 5, 6].
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+Use the concat method in the nonMutatingConcat function to concatenate attach to the end of original. The function should return the concatenated array.
 
-Pure functions - the same input always gives the same output
-
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
-
-The members of freeCodeCamp happen to love tea.
-
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+url - chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=115184
