@@ -1,13 +1,12 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Combine an Array into a String Using the join Method
+The join method is used to join the elements of an array together to create a string. It takes an argument for the delimiter that is used to separate the array elements in the string.
 
-Functional programming is about:
+Here's an example:
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+const arr = ["Hello", "World"];
+const str = arr.join(" ");
+str would have a value of the string Hello World.
 
-Pure functions - the same input always gives the same output
+Use the join method (among others) inside the sentensify function to make a sentence from the words in the string str. The function should return a string. For example, I-like-Star-Wars would be converted to I like Star Wars. For this challenge, do not use the replace method.
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
-
-The members of freeCodeCamp happen to love tea.
-
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+url - chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=115191
