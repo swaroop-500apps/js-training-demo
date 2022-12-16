@@ -1,12 +1,14 @@
-Combine an Array into a String Using the join Method
-The join method is used to join the elements of an array together to create a string. It takes an argument for the delimiter that is used to separate the array elements in the string.
+Add Elements to the End of an Array Using concat Instead of push
+Functional programming is all about creating and using non-mutating functions.
 
-Here's an example:
+The last challenge introduced the concat method as a way to merge arrays into a new array without mutating the original arrays. Compare concat to the push method. push adds items to the end of the same array it is called on, which mutates that array. Here's an example:
 
-const arr = ["Hello", "World"];
-const str = arr.join(" ");
-str would have a value of the string Hello World.
+const arr = [1, 2, 3];
+arr.push(4, 5, 6);
+arr would have a modified value of [1, 2, 3, 4, 5, 6], which is not the functional programming way.
 
-Use the join method (among others) inside the sentensify function to make a sentence from the words in the string str. The function should return a string. For example, I-like-Star-Wars would be converted to I like Star Wars. For this challenge, do not use the replace method.
+concat offers a way to merge new items to the end of an array without any mutating side effects.
 
-url - chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=115191
+Change the nonMutatingPush function so it uses concat to merge newItem to the end of original without mutating original or newItem arrays. The function should return an array.
+
+url - chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=115198
