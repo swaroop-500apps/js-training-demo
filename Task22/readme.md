@@ -1,13 +1,15 @@
-Functional programming is a style of programming where solutions are simple, isolated functions, without any side effects outside of the function scope: INPUT -> PROCESS -> OUTPUT
+Use the every Method to Check that Every Element in an Array Meets a Criteria
+The every method works with arrays to check if every element passes a particular test. It returns a Boolean value - true if all values meet the criteria, false if not.
 
-Functional programming is about:
+For example, the following code would check if every element in the numbers array is less than 10:
 
-Isolated functions - there is no dependence on the state of the program, which includes global variables that are subject to change
+const numbers = [1, 5, 8, 0, 10, 11];
 
-Pure functions - the same input always gives the same output
+numbers.every(function(currentValue) {
+  return currentValue < 10;
+});
+The every method would return false here.
 
-Functions with limited side effects - any changes, or mutations, to the state of the program outside the function are carefully controlled
+Use the every method inside the checkPositive function to check if every element in arr is positive. The function should return a Boolean value.
 
-The members of freeCodeCamp happen to love tea.
-
-In the code editor, the prepareTea and getTea functions are already defined for you. Call the getTea function to get 40 cups of tea for the team, and store them in the tea4TeamFCC variable.
+url - https://drive.500apps.com/7a3b04f2
